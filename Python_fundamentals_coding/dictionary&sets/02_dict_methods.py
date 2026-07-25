@@ -21,4 +21,5 @@ print(dict)
 
 # keys(),items(),values(),get(),update({}) are the methods used in dictionaries these are the primarily used methods or functions in Python
 
-
+print("Hello world ")
+print("End of the program!!")
