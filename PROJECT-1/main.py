@@ -13,7 +13,7 @@ import random
 
 computer = random.choice([0, 1, -1])
 # print(num)
-youip=input("Enter your choice")
+youip=input("Enter your choice (s/w/g): ").lower()
 youdict={
     "s":1,
     "w":-1,
@@ -24,29 +24,30 @@ reverseddict={
     -1:"Water",
     0:"Gun"
 }
-you=youdict[youip]
-print(f"You chose {reverseddict[you]}, Computer chose {reverseddict[computer]}")
-if(you==computer):
-    print("Its draw!!")
+
+if youip not in youdict:
+    print("Invalid choice! Please enter s, w, or g.")
 else:
-    if(you==1 and computer==-1):
-        print("You won!!")
-    elif(you ==-1 and computer==1):
-        print("You lose and computer wins!!")
-    elif(you==0 and computer==1):
-        print("You lose and computer wins!!")
-    elif(you==0 and computer==-1):
-        print("You won!!")
-    elif(you==1 and computer==0):
-        print("you lost")
-    elif(you==1 and computer==-1):
-        print("You won")
-    elif(you==-1 and computer==0):
-        print("You won!!")
-    elif(you==-1 and computer==1):
-        print("you lost and computer wins")
+    you=youdict[youip]
+    print(f"You chose {reverseddict[you]}, Computer chose {reverseddict[computer]}")
+    
+    if(you==computer):
+        print("Its draw!!")
     else:
-        print("Somethig went wrong")
+        if(you==1 and computer==-1):
+            print("You won!!") # Snake beats Water
+        elif(you ==-1 and computer==1):
+            print("You lose and computer wins!!")
+        elif(you==0 and computer==1):
+            print("You won!!") # Gun beats Snake
+        elif(you==0 and computer==-1):
+            print("You lose and computer wins!!") # Water beats Gun
+        elif(you==1 and computer==0):
+            print("you lost") # Snake loses to Gun
+        elif(you==-1 and computer==0):
+            print("You won!!") # Water beats Gun
+        else:
+            print("Something went wrong")
 
 '''
 if(computer-you==1 or computer-1==-2):

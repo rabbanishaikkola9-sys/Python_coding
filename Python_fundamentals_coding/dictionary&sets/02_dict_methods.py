@@ -8,9 +8,9 @@ dict={
 }
 print(dict,"\n",type(dict))
 # Using the key function()
-print("Printing the keys of the dictionary:\n")
+print("yeah this is the printing of  the keys of the dictionary:\n")
 print(dict.keys())
-print("Printing the values of the keys:\n")
+print("yeah this is the printing of  the values of the keys:\n")
 print(dict.values())
 print("Printing the key values of the dictionary:\n")
 print(dict.items())
