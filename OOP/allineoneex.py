@@ -7,7 +7,7 @@ class college():
     def display(s):
         print(s.name,s.age,s.gender)
 
-# Creating th objects for the class college
+# Creating the objects for the class college
 student1= college("Rabbani",18,"Male")
 student2= college("Ganesh",18,"Male")
 student3= college("Bhanoday",18,"Male")
