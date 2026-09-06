@@ -2,11 +2,12 @@ class Employee:
     language="py" # This is the class attribute
     Gender="male"
     salary=120000
-    def greeteveryone(self):
+    @staticmethod
+    def greeteveryone():
         print("Good morning everyone")
 
-    def getInfo(self):
-        print(f"The language is {self.language} and the salary is {self.salary}")
+    def getInfo(hey):
+        print(f"The language is {hey.language} and the salary is {hey.salary}")
 rabbani=Employee()
 rabbani.name="Harry" # This is the instance /Object attribute
 print(rabbani.name,rabbani.language)
