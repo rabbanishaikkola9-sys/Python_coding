@@ -1,7 +1,7 @@
 class Calculator:
     @staticmethod
     def hello():
-        print("Hello world !!! ")
+        print("Hello there !!! ")
     def __init__(self,n):
         self.n=n
     def square(self):
