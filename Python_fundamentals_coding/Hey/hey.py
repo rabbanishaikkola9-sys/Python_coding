@@ -1,0 +1,1 @@
+print("Hey this is this nothing to concern here about this is just a python text file broo just leave it as it is")
