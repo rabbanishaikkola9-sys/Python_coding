@@ -1,14 +1,18 @@
-class students:
-    name="rabbani"
-    age=18
-    sex="Male"
-    def __int__(self):
-        print("Hey I am Dunder method ")
-    def getinfo(self):
-        print(f"The name of the student is {self.name}")
+class Employee:
+    language="py" # This is the class attribute
+    Gender="male"
+    salary=120000
+    def __init__(self,name,salary,language): # dunder method which is automatically called 
+        print("I am creating an object")
+        self.name=name
+        self.salary=salary
+        self.language=language
+    @staticmethod
+    def greeteveryone():
+        print("Good morning everyone")
 
-
-
-rabbani=students()
-rabbani.
-print(rabbani.name,rabbani.age)
+    def getInfo(hey):
+        print(f"The language is {hey.language} and the salary is {hey.salary}")
+rabbani=Employee("rabbani",120000,"python")
+rohan=Employee()
+print(rabbani.language ,rabbani.salary,rabbani.language)
