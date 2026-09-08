@@ -1,17 +1,17 @@
 class Employee:
      # class attribute
+    name="rehaan"
     age=18 # class attribute
     lang="Python" # class attribute
     sex="Male" # class attribute
-    def getInfo(self):
-        print(f"The language is {self.lang} and the age is {self.age}")
-    @staticmethod
-    def greet():
-        print(f"Hey good Morning to all !!")
+    def getInfo(str):
+        print(f"The lanaguage is {str.lang} and the age is {str.age}")
 rabbani=Employee()
+# Instance attribute stakes over the the class attribute
 rabbani.name="rabbani"# instance or object attribute
-rabbani.lang="JS" # prints the JS bcz the ctrl first checks the instance attribute after that it will go to the class attribute
+rabbani.lang="JS"
+rabbani.age=20 # prints the JS bcz the ctrl first checks the instance attribute after that it will go to the class attribute
 print(rabbani.name,rabbani.age,rabbani.lang,rabbani.sex)
 # Here the output will be the JS not python if JS is absent then the output will be python
-rabbani.greet()
-rabbani.getInfo() # Employee.getInfo(rabbani)
+print("End of the line ")
+rabbani.getInfo()
