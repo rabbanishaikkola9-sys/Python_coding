@@ -6,6 +6,9 @@ class Employee:
     sex="Male" # class attribute
     def getInfo(str):
         print(f"The lanaguage is {str.lang} and the age is {str.age}")
+    @staticmethod
+    def greet():
+        print(f"Hey Good  Morning")
 rabbani=Employee()
 # Instance attribute stakes over the the class attribute
 rabbani.name="rabbani"# instance or object attribute
@@ -14,4 +17,5 @@ rabbani.age=20 # prints the JS bcz the ctrl first checks the instance attribute 
 print(rabbani.name,rabbani.age,rabbani.lang,rabbani.sex)
 # Here the output will be the JS not python if JS is absent then the output will be python
 print("End of the line ")
+rabbani.greet()
 rabbani.getInfo()
